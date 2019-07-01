@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
+				sh 'pwd'
 				sh 'cd testcd'
 				sh 'cat a.txt'
             }
