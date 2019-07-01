@@ -10,8 +10,8 @@ pipeline {
             steps {
                 sh 'mvn -B -DskipTests clean package'
 				sh 'pwd'
-				sh 'cd testcd & cat a.txt'
-				sh 'pwd & cat a.txt'
+				sh 'cd testcd && cat a.txt'
+				sh 'pwd && cat a.txt'
             }
         }
 
